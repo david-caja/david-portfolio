@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Sprachia",
+    "description": "Application de langue avec recherche sémantique et IA.",
+    "tags": ["React", "FastAPI", "AI"]
+  },
+  {
+    "id": 2,
+    "title": "FoodSense",
+    "description": "Plateforme collaborative de gestion alimentaire.",
+    "tags": ["React Native", "Collaboration"]
+  }
+]

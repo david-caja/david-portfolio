@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00ff95;
+  --color-darkBg: #070707;
+}
+
+@layer base {
+  body {
+    @apply bg-darkBg text-white font-sans;
+  }
+}
+
+@layer components {
+  /* Classe pour le bouton vert signature */
+  .btn-accent {
+    @apply bg-[#00ff95] text-black font-bold px-8 py-3 rounded-full hover:bg-green-400 transition-all;
+  }
+  
+  /* Couleur pour les textes accentués (David Parker) */
+  .text-accent {
+    @apply text-[#00ff95];
+  }
+}
