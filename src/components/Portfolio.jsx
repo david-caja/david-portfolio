@@ -23,11 +23,11 @@ const Portfolio = () => {
   return (
     <section className="py-24 bg-darkBg text-white px-6">
       <h2 className="text-4xl font-bold mb-16 text-center">
-        Projet phare : <span className="text-primary">Sprachia</span>
+        Mes Travaux Récents : <span className="text-primary">Sprachia</span>
       </h2>
       
       {/* Grille : 3 colonnes sur desktop, 2 sur tablette, 1 sur mobile */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((proj) => (
           <div key={proj.id} className="group bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden hover:border-primary transition-all duration-300 shadow-lg hover:shadow-[0_0_20px_rgba(0,255,149,0.1)]">
             
