@@ -1,3 +1,5 @@
+import davidImg from '../assets/david_1.jpg';
+
 const About = () => {
   return (
     <section className="py-20 bg-darkBg">
@@ -21,7 +23,7 @@ const About = () => {
         <div className="flex justify-center md:justify-end">
           <div className="max-w-sm rounded-2xl overflow-hidden border-2 border-slate-800 shadow-2xl">
             <img 
-              src="src\assets\david_1.jpg" 
+              src={davidImg} 
               alt="David Winfried" 
               className="w-full h-auto object-contain"
             />
