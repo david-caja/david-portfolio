@@ -10,11 +10,11 @@ import sprachia7 from '../assets/sprachia_7.jpg';
 
 
 const projects = [
-  { id: 1, title: "Sprachia", desc: "application d'apprentissage de langue.", img: sprachia1, tags: ["React", "Fast API" ,"Superbaser"] },
-  { id: 2, title: "Kontext Explorer", desc: "Recherche sémantique (6M de phrases).", img: sprachia2, tags: ["Embeding", "Qdrant" , "Sentence transformer"] },
-  { id: 3, title: "Shadowing AI", desc: "Analyse de prononciation.", img: sprachia3, tags: ["wishper", "STT"] },
-  { id: 4, title: "Video Analyzer", desc: "Analyse TikTok/Reels via IA.", img: sprachia4, tags: ["LLM"] },
-  { id: 5, title: "Tuteur IA", desc: "Appel video avec IA ", img: sprachia7, tags: ["STT", "TTS"] },
+  { id: 1, title: "Sprachia", desc: "application d'apprentissage de langue.", img: sprachia1, tags: ["React", "Fast API" ,"Supabase"] },
+  { id: 2, title: "Kontext Explorer", desc: "Moteur de Recherche sémantique pour trouver les meilleurs phrases de natifs allemands et anglais (9M de phrases).", img: sprachia2, tags: ["Embeding", "Qdrant" , "Sentence transformer"] },
+  { id: 3, title: "Shadowing AI", desc: "Analyse par l'IA de la prononciation.", img: sprachia3, tags: ["wishper", "STT"] },
+  { id: 4, title: "Video Analyzer", desc: "Analyse d'une video et obtention du resumé de la video TikTok/Reels (allemand ou anglais) via le lien grace à l'IA.", img: sprachia4, tags: ["LLM"] },
+  { id: 5, title: "Tuteur IA", desc: "Appel video  en temps réel avec un agent IA en vue de pratiquer et apprendre une langue ", img: sprachia7, tags: ["STT", "TTS"] },
 ];
 
 const Portfolio = () => {

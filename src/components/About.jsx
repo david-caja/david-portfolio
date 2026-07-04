@@ -37,11 +37,20 @@ const ApproachStep = ({ number, title, description, tags }) => (
   </div>
 );
 
+// Nouveau composant pour les expériences
+const ExperienceCard = ({ type, title, year }) => (
+  <div className="bg-slate-900/50 p-5 rounded-xl border border-slate-800 hover:border-primary/50 transition-all">
+    <p className="text-primary text-xs uppercase tracking-wider font-semibold mb-1">{type}</p>
+    <h3 className="text-white font-bold">{title}</h3>
+    <p className="text-gray-500 text-sm">{year}</p>
+  </div>
+);
+
 const About = () => {
   return (
     <section className="py-20 bg-darkBg">
-      {/* Section About Me */}
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center mb-20">
+      {/* Section About Me & Expériences */}
+      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-start mb-20">
         <div>
           <h2 className="text-4xl font-bold mb-6 text-white">
             À propos de <span className="text-primary">moi</span>
@@ -50,11 +59,18 @@ const About = () => {
             Étudiant passionné par l'Intelligence Artificielle et le Big Data. 
             J'aime transformer des données complexes en solutions technologiques innovantes.
           </p>
-          <p className="text-gray-300 leading-relaxed">
+          <p className="text-gray-300 leading-relaxed mb-8">
             En tant que tuteur en sciences, je m'efforce de rendre le savoir accessible 
             tout en continuant à me perfectionner en développement Full-Stack.
           </p>
+          
+          {/* Insertion des infos d'image_b960ed.png */}
+          <div className="grid grid-cols-2 gap-4">
+            <ExperienceCard type="Entreprise" title="Xpera- CEO" year="2026" />
+            <ExperienceCard type="Licence" title="Esgis" year="2023-2026" />
+          </div>
         </div>
+        
         <div className="flex justify-center md:justify-end">
           <div className="max-w-sm rounded-2xl overflow-hidden border-2 border-slate-800 shadow-2xl">
             <img src={davidImg} alt="David Winfried" className="w-full h-auto object-contain" />
@@ -93,7 +109,7 @@ const About = () => {
         </div>
       </div>
 
-      {/* Nouvelle Section : Mon Approche */}
+      {/* Section : Mon Approche */}
       <div className="max-w-6xl mx-auto px-6">
         <p className="text-primary text-center font-semibold mb-2">Mon Approche</p>
         <h2 className="text-3xl font-bold text-center text-white mb-12">Voici comment je travaille</h2>
@@ -107,7 +123,7 @@ const About = () => {
           <ApproachStep 
             number="02" 
             title="Développement & Intégration" 
-            description="Construction d'applications robustes avec des modèles IA/ML et connectivité IoT."
+            description="Construction d'applications robustes avec des modèles IA/ML."
             tags={["Development", "Integration"]}
           />
           <ApproachStep 
