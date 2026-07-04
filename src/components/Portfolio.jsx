@@ -1,13 +1,20 @@
 import { Controlled as ControlledZoom } from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { useState } from 'react';
+import sprachia1 from '../assets/sprachia_1.jpg';
+import sprachia2 from '../assets/sprachia_2.jpg';
+import sprachia3 from '../assets/sprachia_3.jpg';
+import sprachia4 from '../assets/sprachia_4.jpg';
+import sprachia7 from '../assets/sprachia_7.jpg';
+
+
 
 const projects = [
-  { id: 1, title: "Sprachia", desc: "application d'apprentissage de langue.", img: "/src/assets/sprachia_1.jpg", tags: ["React", "Fast API" ,"Superbaser"] },
-  { id: 2, title: "Kontext Explorer", desc: "Recherche sémantique (6M de phrases).", img: "/src/assets/sprachia_2.jpg", tags: ["Embeding", "Qdrant" , "Sentence transformer"] },
-  { id: 3, title: "Shadowing AI", desc: "Analyse de prononciation.", img: "/src/assets/sprachia_3.jpg", tags: ["wishper", "STT"] },
-  { id: 4, title: "Video Analyzer", desc: "Analyse TikTok/Reels via IA.", img: "/src/assets/sprachia_4.jpg", tags: ["LLM"] },
-  { id: 5, title: "Tuteur IA", desc: "Appel video avec IA ", img: "/src/assets/sprachia_7.jpg", tags: ["STT", "TTS"] },
+  { id: 1, title: "Sprachia", desc: "application d'apprentissage de langue.", img: sprachia1, tags: ["React", "Fast API" ,"Superbaser"] },
+  { id: 2, title: "Kontext Explorer", desc: "Recherche sémantique (6M de phrases).", img: sprachia2, tags: ["Embeding", "Qdrant" , "Sentence transformer"] },
+  { id: 3, title: "Shadowing AI", desc: "Analyse de prononciation.", img: sprachia3, tags: ["wishper", "STT"] },
+  { id: 4, title: "Video Analyzer", desc: "Analyse TikTok/Reels via IA.", img: sprachia4, tags: ["LLM"] },
+  { id: 5, title: "Tuteur IA", desc: "Appel video avec IA ", img: sprachia7, tags: ["STT", "TTS"] },
 ];
 
 const Portfolio = () => {
